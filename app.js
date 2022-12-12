@@ -1,3 +1,13 @@
-var ouitput = prompt ("Please provide username");
+var buttonTranslate = document.querySelector("#btn-translate");
+var txtInput = document.querySelector('#txt-input');
+console.log(txtInput);
 
-console.log("Welcome to your new challenge!! " + ouitput);
+function clickHandler() {
+    console.log("clicked");
+    console.log("Input", txtInput.value);
+}
+
+
+buttonTranslate.addEventListener("click", clickHandler);
+
+
