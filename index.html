@@ -11,12 +11,24 @@
         display: block;
         margin: 1rem;
         padding: 1rem;
-    }</style>
+    }
+    #output{
+        border: 1px solid black;;
+        height: 10vh;
+        width: 80%;
+        margin: 1rem;
+        padding: 1rem;  
+    }
+    </style>
 </head>
 <body>
     <h1>Talk Banana</h1>
     <textarea id="txt-input" placeholder="Put your sentence in English and we will convert it to Banana"></textarea>
     <button id="btn-translate" >Translate</button>
+
+    <div style="font-size: larger;">Output will come here</div>
+    <div id="output" ></div>
+
     <script src="app.js" text="type/javascript"></script>
 
 </body>
