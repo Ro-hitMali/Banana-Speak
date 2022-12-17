@@ -6,13 +6,13 @@ var outputDiv = document.querySelector("#output");
 
 var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
-function getTranslationURL (text){
-    return serverURL + "?" + text
+function getTranslationURL (input){
+    return serverURL + "?" + "text=" + input;
 }
 
 function errorHandler(error){
     console.log("Error occured", error)
-    alert("something wromg with server. Try again after some time!! Sorry for the inconvenience caused")
+    alert("something wrong with server. Try again after some time!! Sorry for the inconvenience caused")
 }
 
 function clickHandler() {
