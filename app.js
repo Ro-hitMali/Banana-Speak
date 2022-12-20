@@ -12,7 +12,7 @@ function getTranslationURL (input){
 
 function errorHandler(error){
     console.log("Error occured", error)
-    alert("something wrong with server. Try again after some time!! Sorry for the inconvenience caused")
+    alert("something went wrong with server. Try again after some time!! Sorry for the inconvenience caused")
 }
 
 function clickHandler() {
@@ -24,10 +24,10 @@ function clickHandler() {
   fetch(getTranslationURL(inputText)) 
   .then(response => response.json())
   .then(json => {
-    var translateTxt = json.content.translated
+    var translateTxt = json.contents.translated
     outputDiv.innerText = translateTxt;
    })
-    .catch(errorHandler)
+    .catch(errorHandle)
 };
 
 buttonTranslate.addEventListener("click", clickHandler);
